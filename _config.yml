@@ -1,0 +1,36 @@
+title: Cookie
+description: > # this means to ignore newlines until "show_excerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+
+permalink: "/blog/:title/"
+
+plugins:
+- jekyll-feed
+- jekyll-postcss
+- jekyll-seo-tag
+
+highlighter: rouge
+
+collections:
+  posts:
+    output: true
+    permalink: "/blog/:title"
+  pages:
+    output: true
+    permalink: "/:title"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - tailwind.config.js
+  - .gitignore
+  - vendor
+
+
