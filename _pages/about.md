@@ -8,7 +8,7 @@ This is a landing page site using [Tailwind CSS](https://www.tailwindcss.com/). 
 
 You can find the source code for cookie at GitHub:
 [abhinavs](https://github.com/abhinavs) /
-[soopr-landing](https://github.com/abhinavs/cookie)
+[cookie](https://github.com/abhinavs/cookie)
 
 Cookie is a Jekyll based static website for your next project. It uses Tailwind CSS and comes with
 1. Landing Page
@@ -20,11 +20,11 @@ All pages are responsive and mobile friendly.
 ## Why Jekyll?
 Jekyll is a static website generator - what it means is that in production, your site will be extremely fast because it has been 'compliled' into HTML pages while deployment. Separating your landing website from your app website is also useful because it takes away the load which otherwise your app website would have handled - it keeps your app website free.
 
-Goodly uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
+Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
 
 ## Installation
 1. Fork this repository.
-2. `cd goodly`
+2. `cd cookie`
 3. `bin/bootstrap`
 
 ## Starting Server

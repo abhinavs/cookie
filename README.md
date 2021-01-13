@@ -6,6 +6,11 @@ Cookie is a Jekyll based static website for your next project. It uses Tailwind 
 
 All pages are responsive and mobile friendly.
 
+## Demo
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58bd7992-1cc1-4fb9-b684-6be577a06324/deploy-status)](https://app.netlify.com/sites/cookie-demo/deploys)
+<br />
+You can see demo app deployed [here](https://cookie-demo.netlify.app/)
+
 ## Why Jekyll?
 Jekyll is a static website generator - what it means is that in production, your site will be faster because it has been converted into HTML pages while deployment. Another reason is that by separating your landing website from your app website, your app servers get comparatively free and can boost performance for your regular customers. 
 
@@ -30,8 +35,11 @@ Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
 8. [Font Awesome](https://fontawesome.com/) is also integrated, to add any icon in your HTML files, you can refer to the website
 
 ## Deploy Instructions
-Website can be easily deployed on all the cloud providers (AWS etc.), and on static website hosting services like Netlify & Vercel.
-Detailed deployment steps - TODO
+Website can be easily deployed on all the cloud providers (AWS etc.), and on static website hosting services like Netlify & Vercel. You can also use this button to do one click deploy
+<br />
+<br />
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/abhinavs/cookie)
+
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/abhinavs/cookie.

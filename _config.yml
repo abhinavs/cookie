@@ -7,9 +7,11 @@ description: > # this means to ignore newlines until "show_excerpts:"
 permalink: "/blog/:title/"
 
 plugins:
-- jekyll-feed
-- jekyll-postcss
-- jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-postcss
+  - jekyll-seo-tag
+  - jekyll-purgecss
+  - jekyll-minifier
 
 highlighter: rouge
 
@@ -21,6 +23,10 @@ collections:
     output: true
     permalink: "/:title"
 
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -29,8 +35,7 @@ exclude:
   - package-lock.json
   - README.md
   - postcss.config.js
+  - purgecss.config.js
   - tailwind.config.js
   - .gitignore
   - vendor
-
-

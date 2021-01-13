@@ -1,12 +1,19 @@
 {
-  "name": "jekyll-tailwindui",
+  "name": "cookie",
   "version": "1.0.0",
-  "dependencies": {
+  "description": "Landing website with blog using Jekyll and TailwindCSS",
+  "homepage": "https://cookie-demo.netlify.app",
+  "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.9",
-    "tailwindcss": "^2.0.1"
-  }
+
+    "postcss-import": "14.0.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "author": "Abhinav Saxena",
+  "license": "MIT",
+  "dependencies": {}
 }
