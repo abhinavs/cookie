@@ -13,6 +13,8 @@ plugins:
   - jekyll-purgecss
   - jekyll-minifier
 
+css_dir: "assets/css" # defaults to "css"
+
 highlighter: rouge
 
 collections:
