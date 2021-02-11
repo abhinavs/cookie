@@ -29,6 +29,9 @@ jekyll-minifier:
   uglifier_args:
     harmony: true
 
+soopr:
+  publish-token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+
 exclude:
   - Gemfile
   - Gemfile.lock

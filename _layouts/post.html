@@ -2,39 +2,43 @@
 layout: default
 ---
 
-{%- include header.html -%}
 
-<article class="relative py-32 bg-white overflow-hidden" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="font-sans relative py-24 md:py-28 bg-white overflow-hidden" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="relative px-4 sm:px-6 lg:px-8">
-    <div class="text-lg max-w-prose mx-auto mb-6">
+    <div class="text-lg max-w-prose mx-auto mb-4">
       <h1
-        class="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        class="mt-2 mb-2 text-3xl text-center-DIS leading-8 font-extrabold tracking-tight-DIS text-gray-800 sm:text-4xl sm:leading-10"
         itemprop="name headline">
         {{ page.title | escape }}</h1>
     </div>
-    <p class="max-w-prose mx-auto mb-6 text-center">
+    <p class="max-w-prose mx-auto mb-2 text-lg uppercase text-gray-500"><span class="font-bold tracking-wide">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time class="dt-published text-xs" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
       {%- if page.modified_date -%}
       ~
       {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-      <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+      <time class="dt-modified text-sm" datetime="{{ mdate }}" itemprop="dateModified">
         {{ mdate | date: date_format }}
       </time>
       {%- endif -%}
       {%- if page.author -%}
       • {% for author in page.author %}
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="author text-sm" itemscope itemtype="http://schema.org/Person">
         <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
       {%- if forloop.last == false %}, {% endif -%}
       {% endfor %}
-      {%- endif -%}</p>
+      {%- endif -%}
+    </span></p>
+    <!-- 
+      Please sign up at https://www.soopr.co to personalize share and reaction buttons
+    -->
+    <div class="max-w-prose text-lg mx-auto mt-4 mb-8 soopr-btn soopr-btn-def" style="min-height: 36px;"></div>
   </header>
 
-  <div class="prose prose-lg text-gray-500 mx-auto" itemprop="articleBody">
+  <div class="prose prose-lg px-4 md:px-0 text-gray-700 mx-auto" itemprop="articleBody">
     {{ content }}
   </div>
 
@@ -44,5 +48,3 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
-
-{%- include footer.html -%}
