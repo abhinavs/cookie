@@ -120,5 +120,9 @@
 </footer>
 
 {%- if site.soopr -%}
-<script async='' data-soopr-token="{{site.soopr.publish-token}}" defer='defer' src="https://sdk.soopr.co/soopr.js"></script>
+  {%- if site.soopr.publish_token and jekyll.environment == "production" -%}
+    <script async='' data-soopr-token="{{site.soopr.publish_token}}" defer='defer' src="https://sdk.soopr.co/soopr.js"></script>
+  {%- else -%}
+    <script async defer src="https://sdk.soopr.co/soopr.js"></script>
+  {%- endif -%}
 {%- endif -%}

@@ -30,7 +30,7 @@ jekyll-minifier:
     harmony: true
 
 soopr:
-  publish-token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 exclude:
   - Gemfile
