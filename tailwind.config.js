@@ -1,21 +1,29 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['_site/*.html','_site/**/*.html', '_posts/**/*.md', '_layouts/**/*.html', '_includes/**/*.html'],
+  purge: [
+    "_site/*.html",
+    "_site/**/*.html",
+    "_posts/**/*.md",
+    "_layouts/**/*.html",
+    "_includes/**/*.html"
+  ],
+
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
       }
     }
+    // https://tailwindcss.com/docs/background-color
   },
   variants: {
     extend: {}
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio')
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio")
   ]
-}
+};

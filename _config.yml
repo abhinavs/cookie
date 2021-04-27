@@ -1,11 +1,16 @@
-title: Cookie
+title: Edmonton Indoor Storage
 description: > # this means to ignore newlines until "show_excerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-url: https://cookie-demo.netlify.app # change this URL, this is needed for generating right sitemap
-
+url: https://www.edmontonindoorstorage.ca # change this URL, this is needed for generating right sitemap
 permalink: "/blog/:title/"
+
+config:
+  google_maps_url: https://www.google.com/maps/
+
+meta:
+  theme_color: "#00205B"
 
 plugins:
   - jekyll-feed

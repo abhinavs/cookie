@@ -1,17 +1,38 @@
 <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-800"
+      class="
+        top-0
+        absolute
+        z-50
+        w-full
+        flex
+        flex-wrap
+        items-center
+        justify-between
+        px-2
+        py-3
+        navbar-expand-lg
+        bg-yellow-300
+        text-grey-300
+      "
     >
       <div
         class="container px-4 mx-auto flex flex-wrap items-center justify-between"
       >
         <div
-          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-        >
-          <a
-            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-            href="/"
-            >Cookie</a
-          ><button
+          class="
+            w-full
+            relative
+            flex
+            justify-between
+            lg:w-auto
+            lg:static
+            lg:block
+            lg:justify-start"
+          >
+
+          {% include nav-text-banner.html %}
+
+          <button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
             type="button"
             onclick="toggleNavbar('example-collapse-navbar')"
@@ -25,45 +46,45 @@
         >
           <ul class="flex flex-col lg:flex-row list-none mr-auto">
             <li class="flex items-center">
+              {% comment %}
+              <!--
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="/blog"
                 ><i
                   class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
                 ></i>
                 Blog</a
               >
+              --->
+              {% endcomment %}
             </li>
           </ul>
-          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto text-blue-600">
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://www.facebook.com"
+                class="bg-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="/account"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
+                  class="fas fa-user text-lg leading-lg"
                 ></i
-                ><span class="lg:hidden inline-block ml-2">Share</span></a
+                ><span class="inline-block ml-2 text-gray-600">My Account</span></a
               >
             </li>
             <li class="flex items-center">
               <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://twitter.com/abhinav"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://github.com/abhinavs/cookie"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Star</span></a
+              class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                href="/account"
+                >
+                <span class="inline-block ml-2 text-gray-600">Contact Us</span>
+                <i class="
+                  fas
+                  fa-phone
+                  text-lg
+                  leading-lg
+                  text-blue-600
+                "></i>
+                </a
               >
             </li>
             <li class="flex items-center">
@@ -72,7 +93,7 @@
                 type="button"
                 style="transition: all 0.15s ease 0s;"
               >
-                <i class="fas fa-arrow-alt-circle-right"></i> Sign Up
+                <i class="fas fa-check text-blue-600"></i> Reserve Your Spot
               </button>
             </li>
           </ul>

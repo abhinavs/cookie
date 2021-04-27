@@ -5,3 +5,5 @@
 _site
 Gemfile.lock
 node_modules
+# Files pasted from OneDrive come with annoying `FILENAME:Zone.Identifier` companion file.
+*:Zone.Identifier

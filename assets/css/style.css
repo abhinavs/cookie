@@ -1,9 +1,20 @@
 ---
+
 ---
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.prose li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*
+:root {
+    --primary: #742a2a;
+    --secondary: #e53e3e;
+} */
 
 .highlight .hll { background-color: #515151 }
 .highlight  { background: #2d2d2d; color: #f2f0ec }
