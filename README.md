@@ -19,6 +19,10 @@ Cookie is a Jekyll and Tailwind CSS based static website that makes the whole pr
 <br />
 You can see demo app deployed [here](https://cookie-demo.netlify.app/)
 
+## Used by
+* [SkillsEdge](https://www.skillsedge.co/)
+* [Soopr](https://www.soopr.co)
+
 ## Why Jekyll?
 Jekyll is a static website generator - what it means is that in production, your site will be faster because it has been converted into HTML pages while deployment. Another reason is that by separating your landing website from your app website, your app servers get comparatively free and can boost performance for your regular customers. 
 
