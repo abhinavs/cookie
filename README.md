@@ -12,7 +12,7 @@ Cookie is a Jekyll and Tailwind CSS based static website that makes the whole pr
 * SEO optimized (uses [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag))
 * RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
 * Easy to deploy, one-click deploy on [Netlify](https://www.netlify.com) possible
-* [Soopr](https://wwww.soopr.co) integrated - easy to customize share & like buttons, URL shortning and website analytics
+* [Soopr](https://www.soopr.co) integrated - easy to customize share & like buttons, URL shortning and website analytics
 
 
 ## Demo
