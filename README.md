@@ -75,5 +75,5 @@ If you like Cookie, do check out my other projects
 *   [microrequests](https://www.abhinav.co/microrequests) - a Python library to help you consume microservice efficiently
 
 
-✨⚡You can read more about me on my [blog](https://www.abhinav.co/about/) or follow me on Twitter
+✨⚡You can read more about me on my [blog](https://www.abhinav.co/about/) or follow me on Twitter - [@abhinav](https://twitter.com/abhinav)
 
