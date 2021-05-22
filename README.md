@@ -31,7 +31,7 @@ Jekyll is a static website generator - what it means is that in production, your
 Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
 
 ## Installation
-1. Fork this repository.
+1. [Fork this repository](https://github.com/abhinavs/cookie/fork).
 2. `cd cookie`
 3. `bin/bootstrap`
 
