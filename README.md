@@ -12,7 +12,7 @@ Cookie is a Jekyll and Tailwind CSS based static website that makes the whole pr
 * SEO optimized (uses [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag))
 * RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
 * Easy to deploy, one-click deploy on [Netlify](https://www.netlify.com) possible
-* [Soopr](https://wwww.soopr.co) integrated - easy to customize share & like buttons, URL shortning and website analytics
+* [Soopr](https://www.soopr.co) integrated - easy to customize share & like buttons, URL shortning and website analytics
 
 
 ## Demo
@@ -20,13 +20,18 @@ Cookie is a Jekyll and Tailwind CSS based static website that makes the whole pr
 <br />
 You can see demo app deployed [here](https://cookie-demo.netlify.app/)
 
+## Used by
+* [SkillsEdge](https://www.skillsedge.co/)
+* [Soopr](https://www.soopr.co)
+* [APIC Agent](https://www.apicagent.com)
+
 ## Why Jekyll?
 Jekyll is a static website generator - what it means is that in production, your site will be faster because it has been converted into HTML pages while deployment. Another reason is that by separating your landing website from your app website, your app servers get comparatively free and can boost performance for your regular customers. 
 
 Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
 
 ## Installation
-1. Fork this repository.
+1. [Fork this repository](https://github.com/abhinavs/cookie/fork).
 2. `cd cookie`
 3. `bin/bootstrap`
 
@@ -58,4 +63,18 @@ Cookie uses landing page provided by [Tailwind Starter Kit](https://www.creative
 
 ## License
 This project is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Other Projects
+If you like Cookie, do check out my other projects
+*   [moonwalk](https://github.com/abhinavs/moonwalk) - a fast and minimal blog theme with clean dark mode
+*   [scoop](https://github.com/abhinavs/scoop) - a Sinatra boilerplate project using Corneal, ActiveRecord, Capistrano, Puma & Nginx
+*   [soopr](https://www.soopr.co) - a tool that supports you in content marketing
+*   [apicagent](https://www.apicagent.com) - a FREE API that extracts device details from user-agent string
+*   [pincodr](https://pincodr.apiclabs.com) - a FREE API for Indian pincodes
+*   [humangous](https://www.humangous.co) - create public and private 'working with you' guides
+*   [blockr](https://www.abhinav.co/blockr) - a CLI tool to help you easily block and unblock websites
+*   [microrequests](https://www.abhinav.co/microrequests) - a Python library to help you consume microservice efficiently
+
+
+✨⚡You can read more about me on my [blog](https://www.abhinav.co/about/) or follow me on Twitter - [@abhinav](https://twitter.com/abhinav)
 
