@@ -1,5 +1,5 @@
 # Cookie - a fast and easy to deploy landing website for your next project.
-<img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/cookie.png" />
+<img style="margin:auto;width=5rem;" src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/cookie.png" />
 Cookie is a Jekyll and Tailwind CSS based static website that makes the whole process of creating and launching landing websites extremely easy. With its responsive and mobile friendly pages, integrated blog, additional pages and [Soopr](https://www.soopr.co) integration, you can focus on building your product than landing website.
 
 ## Features
