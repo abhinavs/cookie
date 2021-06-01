@@ -1,0 +1,17 @@
+<div class="w-screen h-screen flex items-center justify-center">
+    <div class="max-w-7xl mx-auto text-center"
+         x-data="{
+                    text: '',
+                    textArray : ['Alpine JS is Amazing'],
+                    textIndex: 0,
+                    charIndex: 0,
+                    typeSpeed: 100,
+                 }"
+         x-init="setInterval(function(){
+                    let current = $data.textArray[ $data.textIndex ];
+                    $data.text = current.substring(0, $data.charIndex);
+                    $data.charIndex += 1;
+                 }, $data.typeSpeed);">
+        <h1 class="text-7xl font-black" x-text="text"></h1>
+    </div>
+</div>
