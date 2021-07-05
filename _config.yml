@@ -1,13 +1,11 @@
 title: Edmonton Indoor Storage
-description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: > # this means to ignore newlines until the next property (e.g. "show_excerpts:")
+  Edmonton's Newest, Largest, Indoor Space for your RVs, Trucks, Campers, ATVs, Hot Rods, Seasonal Cars, Valuables, or anything else you cherish.
+show_excerpts: true
 url: https://www.edmontonindoorstorage.ca # change this URL, this is needed for generating right sitemap
 permalink: "/blog/:title/"
 
-config:
-  google_maps_url: https://www.google.com/maps/
+map_url: https://www.google.com/maps/place/102+Ave+%26+102+St+NW,+Edmonton,+AB+T5J+0A5/@53.5430717,-113.4977875,17z/data=!3m1!4b1!4m5!3m4!1s0x53a02248a5c29395:0x77f9b18c1eeec2c4!8m2!3d53.5430717!4d-113.4955988
 
 meta:
   theme_color: "#00205B"
