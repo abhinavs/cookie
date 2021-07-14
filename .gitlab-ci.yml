@@ -1,0 +1,35 @@
+image: ruby:2.6
+
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+before_script:
+  - apt-get update -qq
+  - curl -sL https://deb.nodesource.com/setup_14.x | bash -
+  - apt-get install -y -qq nodejs
+  - npm install
+  - gem install bundler
+  - bundle install
+
+test:
+  stage: test
+  script:
+    - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+      - test
+  except:
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build --trace -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
