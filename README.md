@@ -13,6 +13,7 @@ Cookie is a Jekyll and Tailwind CSS based static website that makes the whole pr
 * RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
 * Easy to deploy, one-click deploy on [Netlify](https://www.netlify.com) possible
 * [Soopr](https://www.soopr.co) integrated - easy to customize share & like buttons, URL shortning and website analytics
+* Auto generated share images for social media using Soopr
 
 
 ## Demo
@@ -47,6 +48,9 @@ Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
 6. You can customize image assets in `assets/img` directory.
 7. You will have to hook the 'Work with Us' form present on main page with a real backend.
 8. [Font Awesome](https://fontawesome.com/) is also integrated, to add any icon in your HTML files, you can refer to the website
+9. Sign up for free on [Soopr](https://www.soopr.co) and add your `publish_token` in `_config.yml` file - with this, each page gets short URL, like button and auto generated share image for social media.
+
+<img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/twitter_card.png" />
 
 ## Deploy Instructions
 Website can be easily deployed on all the cloud providers (AWS etc.), and on static website hosting services like Netlify & Vercel. You can also use this button to do one click deploy
