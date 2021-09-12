@@ -9,3 +9,5 @@ gem "jekyll-soopr-seo-tag"
 gem "jekyll-minifier"
 gem 'jekyll-sitemap'
 gem "rouge"
+
+gem "webrick", "~> 1.7"
