@@ -1,3 +1,19 @@
 #!/bin/sh
+# This expects to run in your project home directory, e.g. `cookie`
+# This deletes & regenerates _site/ which you can `scp -R` to your web server
 
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build "$@"
+
+# Hack: assume every *.html (except index) should be moved to a
+# subdirectory bearing its name; repeat for blog/ subdirectory
+for HTML in $(ls -1 _site/blog/*.html); do
+    DIR=$(basename $HTML .html)
+    mkdir "_site/blog/$DIR"
+    mv $HTML "_site/blog/$DIR/index.html"
+done
+
+for HTML in $(ls -1 _site/*.html | grep -v index.html); do
+    DIR=$(basename $HTML .html)
+    mkdir "_site/$DIR" >/dev/null 2>&1  # blog/ already exists
+    mv $HTML "_site/$DIR/index.html"
+done
