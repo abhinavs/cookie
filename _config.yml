@@ -12,7 +12,6 @@ plugins:
   - jekyll-feed
   - jekyll-postcss
   - jekyll-soopr-seo-tag
-  - jekyll-purgecss
   - jekyll-sitemap
   - jekyll-minifier
 
