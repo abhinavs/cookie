@@ -30,6 +30,7 @@ You can see demo app deployed [here](https://cookie-demo.netlify.app/)
 Jekyll is a static website generator - what it means is that in production, your site will be faster because it has been converted into HTML pages while deployment. Another reason is that by separating your landing website from your app website, your app servers get comparatively free and can boost performance for your regular customers. 
 
 Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
+**Update**: Now Cookie uses Tailwind 3.0
 
 ## Installation
 1. [Fork this repository](https://github.com/abhinavs/cookie/fork).
