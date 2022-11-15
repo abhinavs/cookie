@@ -52,7 +52,7 @@ Check out the [Soopr Website][soopr-website] for more info on how to get the mos
 TODO
 
 ## Credits
-Landing page is based on [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation) - thanks for providing an amazing landing page under MIT License.
+Landing page is based on [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation) and components from [Tailblocks](https://tailblocks.cc/) - thanks for providing an amazing landing page and components under MIT License.
 
 
 [soopr-website]: https://www.soopr.co
