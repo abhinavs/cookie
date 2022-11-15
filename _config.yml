@@ -10,7 +10,7 @@ permalink: "/blog/:title/"
 
 plugins:
   - jekyll-feed
-  - jekyll-postcss
+  - jekyll-postcss-v2
   - jekyll-soopr-seo-tag
   - jekyll-sitemap
   - jekyll-minifier
