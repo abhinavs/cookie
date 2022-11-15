@@ -1,5 +1,6 @@
 # Cookie - a fast and easy to deploy landing website for your next project.
 <img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/cookie.png" />
+
 Cookie is a Jekyll and Tailwind CSS based static website that makes the whole process of creating and launching landing websites extremely easy. With its responsive and mobile friendly pages, integrated blog, additional pages and [Soopr](https://www.soopr.co) integration, you can focus on building your product than landing website.
 
 ## Features
@@ -25,11 +26,14 @@ You can see demo app deployed [here](https://cookie-demo.netlify.app/)
 * [SkillsEdge](https://www.skillsedge.co/)
 * [Soopr](https://www.soopr.co)
 * [APIC Agent](https://www.apicagent.com)
+* [APIC Blocks](https://www.apicblocks.com)
+* [Chhoti Si Kahani](https://www.chhotisikahani.com)
 
 ## Why Jekyll?
 Jekyll is a static website generator - what it means is that in production, your site will be faster because it has been converted into HTML pages while deployment. Another reason is that by separating your landing website from your app website, your app servers get comparatively free and can boost performance for your regular customers. 
 
 Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
+**Update**: Now Cookie uses Tailwind 3.0
 
 ## Installation
 1. [Fork this repository](https://github.com/abhinavs/cookie/fork).
