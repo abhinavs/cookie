@@ -23,10 +23,10 @@ Cookie is a Jekyll and Tailwind CSS based static website that makes the whole pr
 You can see demo app deployed [here](https://cookie-demo.netlify.app/)
 
 ## Used by
-* [SkillsEdge](https://www.skillsedge.co/)
-* [Soopr](https://www.soopr.co)
-* [APIC Agent](https://www.apicagent.com)
 * [APIC Blocks](https://www.apicblocks.com)
+* [Soopr](https://www.soopr.co)
+* [Annexr](https://www.annexr.com)
+* [APIC Agent](https://www.apicagent.com)
 * [Chhoti Si Kahani](https://www.chhotisikahani.com)
 
 ## Why Jekyll?
