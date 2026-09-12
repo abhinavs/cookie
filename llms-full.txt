@@ -1,0 +1,24 @@
+---
+permalink: /llms-full.txt
+---
+# Cookie
+
+> A Jekyll and Tailwind CSS theme for landing pages, blogs, and docs.
+
+Full text of every doc page in one file, for agents that fetch once instead of crawling links. See [/llms.txt]({{ "/llms.txt" | absolute_url }}) for a short index instead.
+
+{%- assign docs = site.docs | sort: "order" -%}
+{%- for doc in docs %}
+
+---
+
+## {{ doc.title }}
+
+{{ doc.content | replace: '</p>', '</p>
+' | replace: '</h1>', '</h1>
+' | replace: '</h2>', '</h2>
+' | replace: '</h3>', '</h3>
+' | replace: '</li>', '</li>
+' | replace: '</pre>', '</pre>
+' | strip_html | replace: '&lt;', '<' | replace: '&gt;', '>' | replace: '&amp;', '&' | strip }}
+{%- endfor %}

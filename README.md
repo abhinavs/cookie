@@ -1,7 +1,7 @@
 # Cookie - a fast and easy to deploy landing website for your next project.
-<img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/cookie.png" />
+<img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/screenshot.png" />
 
-Cookie is a Jekyll and Tailwind CSS based static website that makes the whole process of creating and launching landing websites extremely easy. With its responsive and mobile friendly pages, integrated blog, additional pages and [Soopr](https://www.soopr.co) integration, you can focus on building your product than landing website.
+Cookie is a Jekyll and Tailwind CSS based static website that makes the whole process of creating and launching landing websites extremely easy. With its responsive and mobile friendly pages, integrated blog and additional pages, you can focus on building your product than landing website.
 
 ## Features
 * Well-designed landing page
@@ -13,8 +13,7 @@ Cookie is a Jekyll and Tailwind CSS based static website that makes the whole pr
 * SEO optimized (uses [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag))
 * RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
 * Easy to deploy, one-click deploy on [Netlify](https://www.netlify.com) possible
-* [Soopr](https://www.soopr.co) integrated - easy to customize share & like buttons, URL shortning and website analytics
-* Auto generated share images for social media using Soopr
+* Share & like buttons built in on blog posts and pages, with optional URL shortening and share-image generation
 
 
 ## Demo
@@ -32,8 +31,7 @@ You can see demo app deployed [here](https://cookie-demo.netlify.app/)
 ## Why Jekyll?
 Jekyll is a static website generator - what it means is that in production, your site will be faster because it has been converted into HTML pages while deployment. Another reason is that by separating your landing website from your app website, your app servers get comparatively free and can boost performance for your regular customers. 
 
-Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
-**Update**: Now Cookie uses Tailwind 3.0
+Cookie runs on Jekyll 4.4 and Tailwind CSS v4.
 
 ## Installation
 1. [Fork this repository](https://github.com/abhinavs/cookie/fork).
@@ -50,9 +48,8 @@ Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
 4. You should also checkout `_config.yml` in root directory, and add relevant details. Many of them are used for SEO purposes.
 5. You should also add favicons in `custom-head.html` present in `_includes` directory. You can use [RealFaviconGenerator](https://realfavicongenerator.net/).
 6. You can customize image assets in `assets/img` directory.
-7. You will have to hook the 'Work with Us' form present on main page with a real backend.
-8. [Font Awesome](https://fontawesome.com/) is also integrated, to add any icon in your HTML files, you can refer to the website
-9. Sign up for free on [Soopr](https://www.soopr.co) and add your `publish_token` in `_config.yml` file - with this, each page gets short URL, like button and auto generated share image for social media.
+7. [Phosphor Icons](https://phosphoricons.com/) is integrated, so you can drop any of its icon classes into your HTML files.
+8. Share and like buttons are already wired up on blog posts and pages. If you have a publish token, add it under `soopr` in `_config.yml` for short URLs and auto generated share images.
 
 <img src="https://raw.githubusercontent.com/abhinavs/cookie/master/assets/img/twitter_card.png" />
 
@@ -76,7 +73,6 @@ This project is available as open source under the terms of the [MIT License](ht
 If you like Cookie, do check out my other projects
 *   [moonwalk](https://github.com/abhinavs/moonwalk) - a fast and minimal blog theme with clean dark mode
 *   [scoop](https://github.com/abhinavs/scoop) - a Sinatra boilerplate project using Corneal, ActiveRecord, Capistrano, Puma & Nginx
-*   [soopr](https://www.soopr.co) - a tool that supports you in content marketing
 *   [apicagent](https://www.apicagent.com) - a FREE API that extracts device details from user-agent string
 *   [pincodr](https://pincodr.apiclabs.com) - a FREE API for Indian pincodes
 *   [humangous](https://www.humangous.co) - create public and private 'working with you' guides

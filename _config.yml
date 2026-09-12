@@ -12,7 +12,6 @@ plugins:
   - jekyll-feed
   - jekyll-soopr-seo-tag
   - jekyll-sitemap
-  - jekyll-minifier
 
 css_dir: "assets/css" # defaults to "css"
 
@@ -25,13 +24,14 @@ collections:
   pages:
     output: true
     permalink: "/:title"
-
-jekyll-minifier:
-  uglifier_args:
-    harmony: true
+  docs:
+    output: true
+    permalink: "/docs/:path/"
 
 soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+  publish_token: "" # optional: add a publish token here to enable short URLs and auto generated share images
+
+image: /assets/img/twitter_card.png
 
 twitter:
   card: summary_large_image
@@ -45,6 +45,5 @@ exclude:
   - README.md
   - postcss.config.js
   - purgecss.config.js
-  - tailwind.config.js
   - .gitignore
   - vendor

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{%- assign docs = site.docs | sort: "order" -%}
+<div class="max-w-6xl mx-auto px-5 py-16 flex flex-col sm:flex-row gap-10">
+  <nav class="sm:w-48 shrink-0">
+    <p class="text-xs text-text-dim mb-3">docs</p>
+    <ul class="space-y-1 text-sm">
+      {%- for doc in docs -%}
+      <li>
+        <a href="{{ doc.url | relative_url }}"
+          class="block px-2 py-1 rounded {% if doc.url == page.url %}bg-surface text-text{% else %}text-text-dim hover:text-text{% endif %}">
+          {{ doc.title }}
+        </a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+
+  <div class="min-w-0 flex-1">
+    <h1 class="font-sans text-3xl sm:text-4xl font-semibold text-text mb-8">{{ page.title | escape }}</h1>
+    <div class="prose prose-headings:font-sans max-w-2xl">
+      {{ content }}
+    </div>
+
+    <div class="max-w-2xl mt-16 pt-6 border-t border-border flex justify-between text-sm">
+      {%- assign doc_index = -1 -%}
+      {%- for doc in docs -%}
+        {%- if doc.url == page.url -%}{%- assign doc_index = forloop.index0 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- assign prev_index = doc_index | minus: 1 -%}
+      {%- assign next_index = doc_index | plus: 1 -%}
+      {%- if doc_index > 0 -%}
+        {%- assign prev_doc = docs[prev_index] -%}
+        <a href="{{ prev_doc.url | relative_url }}" class="text-text-dim hover:text-text">&larr; {{ prev_doc.title }}</a>
+      {%- else -%}
+        <span></span>
+      {%- endif -%}
+      {%- assign next_doc = docs[next_index] -%}
+      {%- if next_doc -%}
+        <a href="{{ next_doc.url | relative_url }}" class="text-text-dim hover:text-text">{{ next_doc.title }} &rarr;</a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>

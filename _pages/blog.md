@@ -2,24 +2,23 @@
 layout: home
 ---
 
-<div class="container max-w-screen-md py-24 md:py-28 mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 class="text-4xl font-black">Blog</h1>
-    <p class="content-text text-lg mt-6">
-    You can write your blog intro here
+<div class="max-w-2xl py-20 mx-auto px-5">
+    <h1 class="font-sans text-3xl sm:text-4xl font-semibold text-text">Blog</h1>
+    <p class="text-text-dim mt-4">
+    Notes on Cookie and the projects built with it.
     </p>
-  <ul class="mt-12">
+  <ul class="mt-12 divide-y divide-border">
     {%- for post in site.posts -%}
-    <li class="mt-16 list-reset">
-      <time class="uppercase text-xs text-gray-500 font-bold">{{ post.date | date: "%b %-d, %Y" }}</time>
-      <h2 class="mt-1 text-2xl tracking-tight font-extrabold text-gray-900 sm:leading-none md:text-3xl">
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    <li class="py-8 first:pt-0">
+      <time class="text-xs text-text-dim">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <h2 class="mt-1 font-sans text-xl sm:text-2xl font-semibold text-text">
+        <a href="{{ post.url | relative_url }}" class="hover:text-accent">{{ post.title | escape }}</a>
       </h2>
-      <div class="mt-6 post-content">{{ post.excerpt }}</div>
-      <div class="mt-10">
-        <a class="text-blue-500 uppercase text-sm tracking-wide font-black content-link" href="{{ post.url | relative_url }}">Read More</a>
+      <div class="mt-3 text-text-dim">{{ post.excerpt }}</div>
+      <div class="mt-4">
+        <a class="text-accent text-sm" href="{{ post.url | relative_url }}">Read more</a>
       </div>
     </li>
-    <hr class="w-full bg-gray-100 my-12" style="height: 1px;">
      {%- endfor -%}
   </ul>
 </div>

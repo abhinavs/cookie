@@ -1,83 +1,36 @@
-<nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-gray-800"
-    >
-      <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-      >
-        <div
-          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-        >
-          <a
-            class="flex-row text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-            href="/"
-            >
-            <span><img class="w-8 h-8" src="/assets/img/cookie.png" alt="Cookie" /></span>
-          </a
-          ><button
-            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-            type="button"
-            onclick="toggleNavbar('example-collapse-navbar')"
-          >
-            <i class="text-white fas fa-bars"></i>
-          </button>
-        </div>
-        <div
-          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="example-collapse-navbar"
-        >
-          <ul class="flex flex-col lg:flex-row list-none mr-auto">
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="/blog"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
-                ></i>
-                Blog</a
-              >
-            </li>
-          </ul>
-          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://www.facebook.com"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Share</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://twitter.com/abhinav"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://github.com/abhinavs/cookie"
-                ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Star</span></a
-              >
-            </li>
-            <li class="flex items-center">
-              <button
-                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                type="button"
-                style="transition: all 0.15s ease 0s;"
-              >
-                <i class="fas fa-arrow-alt-circle-right"></i> Sign Up
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<nav class="border-b border-border font-mono">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="/" class="text-text font-semibold">cookie_</a>
+
+    <div class="hidden sm:flex items-center gap-6 text-sm text-text-dim">
+      <a href="/blog" class="hover:text-text">blog</a>
+      <a href="/docs" class="hover:text-text">docs</a>
+      <a href="https://github.com/abhinavs/cookie" class="hover:text-text">github</a>
+      <button
+        type="button"
+        onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='light'?'dark':'light';d.setAttribute('data-theme',t);localStorage.setItem('theme',t);"
+        class="hover:text-text inline-flex items-center justify-center w-5 h-5"
+        aria-label="Toggle color theme"
+      ><i class="ph-circle-half-bold text-lg"></i></button>
+    </div>
+
+    <button
+      type="button"
+      onclick="document.getElementById('mobile-nav').classList.toggle('hidden')"
+      class="sm:hidden inline-flex items-center justify-center w-8 h-8 text-text-dim hover:text-text"
+      aria-label="Toggle menu"
+    ><i class="ph-list text-xl"></i></button>
+  </div>
+
+  <div id="mobile-nav" class="hidden sm:hidden border-t border-border px-5 py-4 flex flex-col gap-4 text-sm text-text-dim">
+    <a href="/blog" class="hover:text-text">blog</a>
+    <a href="/docs" class="hover:text-text">docs</a>
+    <a href="https://github.com/abhinavs/cookie" class="hover:text-text">github</a>
+    <button
+      type="button"
+      onclick="var d=document.documentElement,t=d.getAttribute('data-theme')==='light'?'dark':'light';d.setAttribute('data-theme',t);localStorage.setItem('theme',t);"
+      class="flex items-center gap-2 hover:text-text w-fit"
+      aria-label="Toggle color theme"
+    ><i class="ph-circle-half-bold text-lg"></i> theme</button>
+  </div>
+</nav>

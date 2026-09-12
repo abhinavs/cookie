@@ -1,0 +1,25 @@
+---
+permalink: /llms.txt
+---
+# Cookie
+
+> A Jekyll and Tailwind CSS theme for landing pages, blogs, and docs.
+
+Cookie builds to static HTML from plain Markdown content. Pages, blog posts, and docs are each a Jekyll collection with a clean permalink, so this file stays a small, accurate map of the site.
+
+For the full text of every doc page in one fetch, see [llms-full.txt]({{ "/llms-full.txt" | absolute_url }}).
+
+## Docs
+{%- assign docs = site.docs | sort: "order" -%}
+{%- for doc in docs %}
+- [{{ doc.title }}]({{ doc.url | absolute_url }})
+{%- endfor %}
+
+## Blog
+{%- for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }})
+{%- endfor %}
+
+## Pages
+- [About]({{ "/about" | absolute_url }})
+- [Contact]({{ "/contact-us" | absolute_url }})

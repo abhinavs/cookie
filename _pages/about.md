@@ -3,7 +3,7 @@ layout: page
 title: About Cookie
 ---
 
-Cookie is a landing page site using [Tailwind CSS](https://www.tailwindcss.com/). You can learn more about customizing the site in `README.md` file in root directory of the project. You can learn more about Jekyll  at [jekyllrb.com](https://jekyllrb.com/)
+Cookie is a landing page site using [Tailwind CSS](https://www.tailwindcss.com/). You can learn more about customizing the site in the [docs](/docs). You can learn more about Jekyll at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for cookie at GitHub:
 [abhinavs](https://github.com/abhinavs) /
@@ -12,22 +12,14 @@ You can find the source code for cookie at GitHub:
 Cookie is a Jekyll based static website for your next project. It uses Tailwind CSS and comes with
 1. Landing Page
 2. Blog
-3. Auxilarly Pages like Terms, Privacy Policy, Contact and About us.
+3. Auxiliary Pages like Terms, Privacy Policy, Contact and About us.
 
 All pages are responsive and mobile friendly.
 
 ## Why Jekyll?
-Jekyll is a static website generator - what it means is that in production, your site will be extremely fast because it has been 'compliled' into HTML pages while deployment. Separating your landing website from your app website is also useful because it takes away the load which otherwise your app website would have handled - it keeps your app website free.
+Jekyll is a static website generator - what it means is that in production, your site will be extremely fast because it has been 'compiled' into HTML pages during deployment. Separating your landing website from your app website is also useful because it takes away the load which otherwise your app website would have handled - it keeps your app website free.
 
-Cookie uses Tailwind 2.0 which is a good improvement over Tailwind 1.0.
-
-## Soopr
-[Soopr][soopr-website] is the easiest way to for you add share reaction buttons to your blog and website, integrate an URL shortener and analytics service. Soopr lets you manage all of these using a powerful dashboard.
-
-Cookie uses Soopr for share and like buttons and is already integrated. By default, Cookie shows `circular` Twitter, Facebook and Copy buttons in `base` size. To add `like` button, please signup for free on [Soopr][soopr-website]
-
-Check out the [Soopr Website][soopr-website] for more info on how to get the most out of Soopr. 
-
+Cookie uses Tailwind CSS v4, styled with the Geist typeface and Phosphor Icons.
 
 ## Installation
 1. Fork this repository.
@@ -38,21 +30,17 @@ Check out the [Soopr Website][soopr-website] for more info on how to get the mos
 `bin/start`
 
 ## Customizing
-1. You can customized landing page by modifying index.html in root directory.
-2. You can add analytics, URL shortner and share buttons using Soopr, sign up on [Soopr][soopr-website], get a publish token for your website and add it in `_config.yml` file 
-3. You can customnize other website pages by modifying files present in `_pages` directory. You can add more pages too - you will be able to directly link to them using filename. Don't forget to customize Terms & Privacy Policy.
-4. You can write blog posts in `_posts` directory. Tailwind Typography for better blog formating and code syntax highlighting is already included.
-5. You should also checkout `_config.yml` in root directory, and add relevant details. Many of them are used for SEO purposes.
-6. You should also add favicons in `custom-head.html` present in `_includes` directory.
-7. You can customize image assets in `assets/img` directory.
-8. You will have to hook the 'Work with Us' form present on main page with a real backend.
-9. [Font Awesome](https://fontawesome.com/) is also integrated, to add any icon in your HTML files, you can refer to the website
+1. You can customize the landing page by modifying `index.html` in the root directory.
+2. Share and like buttons are already wired up on blog posts and pages. To turn on short URLs, auto-generated share images and analytics, add a publish token under `soopr` in the `_config.yml` file
+3. You can customize other website pages by modifying files present in the `_pages` directory. You can add more pages too - you will be able to directly link to them using the filename. Don't forget to customize Terms & Privacy Policy.
+4. You can write blog posts in the `_posts` directory. Tailwind Typography for better blog formatting and code syntax highlighting is already included.
+5. You should also check out `_config.yml` in the root directory, and add relevant details. Many of them are used for SEO purposes.
+6. You should also add favicons in `custom-head.html` present in the `_includes` directory.
+7. You can customize image assets in the `assets/img` directory.
+8. [Phosphor Icons](https://phosphoricons.com/) is integrated, so you can drop any of its icon classes into your HTML files.
 
 ## Deploy Instructions
-TODO
+Run `bundle exec jekyll build` to generate a static site in `_site`. Push that output to Netlify, GitHub Pages, Vercel, or any static host. A GitHub Actions workflow is already set up to build and check the site on every push.
 
 ## Credits
-Landing page is based on [Tailwind Starter Kit](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation) and components from [Tailblocks](https://tailblocks.cc/) - thanks for providing an amazing landing page and components under MIT License.
-
-
-[soopr-website]: https://www.soopr.co
+Cookie's design uses [Tailwind CSS](https://www.tailwindcss.com/), the [Geist](https://vercel.com/font) typeface, and [Phosphor Icons](https://phosphoricons.com/).

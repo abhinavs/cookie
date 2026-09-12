@@ -1,8 +1,84 @@
 ---
 ---
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";
+
+@source "../../*.html";
+@source "../../_pages/**/*.md";
+@source "../../_posts/**/*.md";
+@source "../../_layouts/**/*.html";
+@source "../../_includes/**/*.html";
+
+:root {
+  /* Catppuccin Mocha */
+  --bg: #1e1e2e;
+  --bg-alt: #181825;
+  --surface: #313244;
+  --text: #cdd6f4;
+  --text-dim: #a6adc8;
+  --border: #45475a;
+  --accent: #cba6f7;
+  --accent-text: #1e1e2e;
+}
+
+[data-theme="light"] {
+  /* Catppuccin Latte */
+  --bg: #eff1f5;
+  --bg-alt: #e6e9ef;
+  --surface: #e4e4e7;
+  --text: #4c4f69;
+  --text-dim: #6c6f85;
+  --border: #9ca0b0;
+  --accent: #8839ef;
+  --accent-text: #eff1f5;
+}
+
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SF Mono", "Cascadia Code",
+    "Roboto Mono", Menlo, Consolas, monospace;
+
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-text-dim: var(--text-dim);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+}
+
+.prose {
+  --tw-prose-body: var(--text-dim);
+  --tw-prose-headings: var(--text);
+  --tw-prose-lead: var(--text-dim);
+  --tw-prose-links: var(--accent);
+  --tw-prose-bold: var(--text);
+  --tw-prose-counters: var(--text-dim);
+  --tw-prose-bullets: var(--border);
+  --tw-prose-hr: var(--border);
+  --tw-prose-quotes: var(--text);
+  --tw-prose-quote-borders: var(--border);
+  --tw-prose-captions: var(--text-dim);
+  --tw-prose-code: var(--accent);
+  --tw-prose-pre-code: var(--text);
+  --tw-prose-pre-bg: var(--surface);
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--border);
+}
+
+.prose code::before,
+.prose code::after {
+  content: "";
+}
+
+.prose pre {
+  border: 1px solid var(--border);
+}
 
 
 .highlight .hll { background-color: #515151 }
