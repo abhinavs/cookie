@@ -22,5 +22,6 @@ jobs:
           node-version: "20"
           cache: npm
 
+      - run: node --test tests/copy-command.test.cjs
       - run: npm install
       - run: bundle exec jekyll build

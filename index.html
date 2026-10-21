@@ -24,7 +24,7 @@ layout: home
             <span class="text-text-dim text-xs">terminal</span>
           </div>
           <button type="button" onclick="copyCmd(this)" class="text-text-dim hover:text-text text-xs flex items-center gap-1.5" aria-label="Copy commands">
-            <i class="ph-copy"></i><span>copy</span>
+            <i class="ph-copy" aria-hidden="true"></i><span class="copy-status" aria-live="polite">copy</span>
           </button>
         </div>
         <div class="px-4 py-4 space-y-1 overflow-x-auto">
@@ -59,12 +59,25 @@ layout: home
 
 <script>
   function copyCmd(btn) {
+    var status = btn.querySelector(".copy-status");
     var cmds = "git clone https://github.com/abhinavs/cookie.git\ncd cookie && bin/bootstrap\nbin/start";
-    navigator.clipboard.writeText(cmds);
-    btn.innerHTML = '<i class="ph-check-bold"></i><span>copied</span>';
-    setTimeout(function () {
-      btn.innerHTML = '<i class="ph-copy"></i><span>copy</span>';
-    }, 1500);
+    if (!navigator.clipboard || typeof navigator.clipboard.writeText !== "function") {
+      status.textContent = "copy unavailable";
+      return Promise.resolve(false);
+    }
+
+    try {
+      return navigator.clipboard.writeText(cmds).then(function () {
+        status.textContent = "copied";
+        return true;
+      }, function () {
+        status.textContent = "copy failed";
+        return false;
+      });
+    } catch (error) {
+      status.textContent = "copy failed";
+      return Promise.resolve(false);
+    }
   }
 
   (function () {
